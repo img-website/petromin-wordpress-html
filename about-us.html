@@ -111,9 +111,9 @@
                     <div class="w-full relative">
                         <div class="swiper featureSwiper relative z-0 py-10 font-inter">
                             <div class="swiper-wrapper px-8">
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 flex items-center justify-center bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
 
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
@@ -121,304 +121,336 @@
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">1968</span>
                                         </div>
 
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="JV incorporated (G.M., Mobil/Mobil Petromin); Petrolube brand launched"
-                                                title="JV incorporated (G.M., Mobil/Mobil Petromin); Petrolube brand launched">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                JV incorporated (G.M., Mobil/Mobil Petromin); Petrolube brand launched
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="JV incorporated (G.M., Mobil/Mobil Petromin); Petrolube brand launched"
+                                                    title="JV incorporated (G.M., Mobil/Mobil Petromin); Petrolube brand launched">
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    JV incorporated (G.M., Mobil/Mobil Petromin); Petrolube brand
+                                                    launched
+                                                </div>
                                             </div>
+
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 flex items-center justify-center bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">1969</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Petrolube brand continued its expansion"
-                                                title="Petrolube brand continued its expansion">
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Petrolube brand continued its expansion
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Petrolube brand continued its expansion"
+                                                    title="Petrolube brand continued its expansion">
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Petrolube brand continued its expansion
+                                                </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 flex items-center justify-center bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">1992</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt=" Entered the Egypt market" title=" Entered the Egypt market">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Entered the Egypt market
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt=" Entered the Egypt market" title=" Entered the Egypt market">
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Entered the Egypt market
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2007</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="ADG acquired Petrolube in JV with Gulf Oil Al-Dabbagh"
-                                                title="ADG acquired Petrolube in JV with Gulf Oil Al-Dabbagh">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                ADG acquired Petrolube in JV with Gulf Oil Al-Dabbagh
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="ADG acquired Petrolube in JV with Gulf Oil Al-Dabbagh"
+                                                    title="ADG acquired Petrolube in JV with Gulf Oil Al-Dabbagh">
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    ADG acquired Petrolube in JV with Gulf Oil Al-Dabbagh
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2012</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Opened first fuel station in KSA"
-                                                title="Opened first fuel station in KSA">
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Opened first fuel station in KSA
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Opened first fuel station in KSA"
+                                                    title="Opened first fuel station in KSA">
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Opened first fuel station in KSA
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2013</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Launched first workshop in KSA; ADG acquired full ownership from Gulf Oil Al-Dabbagh"
-                                                title="Launched first workshop in KSA; ADG acquired full ownership from Gulf Oil Al-Dabbagh">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Launched first workshop in KSA; ADG acquired full ownership from Gulf
-                                                Oil Al-Dabbagh
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Launched first workshop in KSA; ADG acquired full ownership from Gulf Oil Al-Dabbagh"
+                                                    title="Launched first workshop in KSA; ADG acquired full ownership from Gulf Oil Al-Dabbagh">
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Launched first workshop in KSA; ADG acquired full ownership from
+                                                    Gulf Oil Al-Dabbagh
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2015</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Opened first Petromin Express in Egypt"
-                                                title="Opened first Petromin Express in Egypt">
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Opened first Petromin Express in Egypt
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Opened first Petromin Express in Egypt"
+                                                    title="Opened first Petromin Express in Egypt">
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Opened first Petromin Express in Egypt
+                                                </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2016</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Acquired Emirates Lubricants Company in UAE and a nationwide Nissan dealership in Saudi
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Acquired Emirates Lubricants Company in UAE and a nationwide Nissan dealership in Saudi
                                 Arabia" title="Acquired Emirates Lubricants Company in UAE and a nationwide Nissan dealership in Saudi
                                 Arabia">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Acquired Emirates Lubricants Company in UAE and a nationwide Nissan
-                                                dealership in Saudi
-                                                Arabia
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Acquired Emirates Lubricants Company in UAE and a nationwide Nissan
+                                                    dealership in
+                                                    Saudi
+                                                    Arabia
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2018</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Expanded with first Petromin Express centres in UAE and Pakistan"
-                                                title="Expanded with first Petromin Express centres in UAE and Pakistan">
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Expanded with first Petromin Express centres in UAE and Pakistan
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Expanded with first Petromin Express centres in UAE and Pakistan"
+                                                    title="Expanded with first Petromin Express centres in UAE and Pakistan">
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Expanded with first Petromin Express centres in UAE and Pakistan
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2020</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Established Electromin; reached 100 fuel stations in Egypt"
-                                                title="Established Electromin; reached 100 fuel stations in Egypt">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Established Electromin; reached 100 fuel stations in Egypt
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Established Electromin; reached 100 fuel stations in Egypt"
+                                                    title="Established Electromin; reached 100 fuel stations in Egypt">
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Established Electromin; reached 100 fuel stations in Egypt
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2021</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Formed National Transport Solutions Company (NTSC); gained Stellantis distribution in
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full h-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Formed National Transport Solutions Company (NTSC); gained Stellantis distribution in
                                 Saudi Arabia; added Volvo and Polestar dealerships under STELLANT EPOT" title="Formed National Transport Solutions Company (NTSC); gained Stellantis distribution in
                                 Saudi Arabia; added Volvo and Polestar dealerships under STELLANT EPOT">
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Formed National Transport Solutions Company (NTSC); gained Stellantis
-                                                distribution in
-                                                Saudi Arabia; added Volvo and Polestar dealerships under STELLANT EPOT
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Formed National Transport Solutions Company (NTSC); gained
+                                                    Stellantis distribution
+                                                    in
+                                                    Saudi Arabia; added Volvo and Polestar dealerships under STELLANT
+                                                    EPOT
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2022</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <?php $img = get_field('feature_slider_img'); ?>
-                                            <?php if ($img): ?>
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo esc_url($img['url']); ?>"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Egypt fuel stations surpassed 200; launched first Petromin Express in India (JV with
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <?php $img = get_field('feature_slider_img'); ?>
+                                                <?php if ($img): ?>
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Egypt fuel stations surpassed 200; launched first Petromin Express in India (JV with
                                 DRB-HICOM); expanded operations in OnFoton Malaysia" title="Egypt fuel stations surpassed 200; launched first Petromin Express in India (JV with
                                 DRB-HICOM); expanded operations in OnFoton Malaysia">
-                                            <?php endif; ?>
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Egypt fuel stations surpassed 200; launched first Petromin Express in
-                                                India (JV with
-                                                DRB-HICOM); expanded operations in OnFoton Malaysia
+                                                <?php endif; ?>
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Egypt fuel stations surpassed 200; launched first Petromin Express
+                                                    in India (JV with
+                                                    DRB-HICOM); expanded operations in OnFoton Malaysia
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide !h-auto">
                                     <div
-                                        class="relative flex flex-col w-full h-full md:p-[6rem] p-[6rem] md:!pb-10 pb-6 pt-12 bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg]">
+                                        class="relative flex flex-col w-full h-full bg-gradient-to-l from-[#E5E5E5] to-[#E5E5E5] -skew-x-[18deg] py-8">
                                         <div
                                             class="absolute -top-8 -left-4 lg:py-3 lg:px-10 py-3 px-7 font-bold bg-gradient-to-l from-[#CB122D] to-[#650916] text-white lg:-skew-x-[6deg] skew-x-[6deg]">
                                             <span
                                                 class="lg:skew-x-[20deg] skew-x-[10deg] block 2xl:text-[2.5rem] xl:text-3xl lg:text-2xl text-xl 2xl:!leading-[3.063rem]">2025
                                                 (Planned)</span>
                                         </div>
-                                        <div class="flex flex-col items-start skew-x-[18deg] h-full gap-y-[1.625rem]">
-                                            <img loading="eager" fetchpriority="high" decoding="async"
-                                                src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
-                                                class="w-auto lg:h-[8.875rem] h-20 object-contain object-center aspect-video"
-                                                alt="Launch of EV Volco in KSA" title="Launch of EV Volco in KSA">
-                                            <div
-                                                class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black text-start text-center">
-                                                Launch of EV Volco in KSA
+                                        <div class="flex flex-col items-start skew-x-[18deg] w-full">
+                                            <div class="md:pl-14 pl-10 max-w-[90%]">
+                                                <img loading="eager" fetchpriority="high" decoding="async"
+                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                    class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
+                                                    alt="Launch of EV Volco in KSA" title="Launch of EV Volco in KSA">
+                                                <div
+                                                    class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
+                                                    Launch of EV Volco in KSA
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
