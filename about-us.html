@@ -37,8 +37,8 @@
     <section class="bg-white h-full">
         <div class="w-full flex justify-between">
             <div
-                class="md:w-1/5 w-full md:block hidden relative bg-[url('./img/about_us_roadmap.webp')] bg-cover bg-center">
-                <span class="sticky top-60 ">
+                class="md:w-1/5 w-full md:block hidden relative bg-[url('./img/about_us_roadmap.webp')] bg-cover bg-center py-28">
+                <span class="sticky top-32 ">
                     <img fetchpriority="low" loading="lazy" src="img/about_car.webp" class="w-full object-contain">
                 </span>
             </div>
@@ -969,7 +969,7 @@
                                 </button>
 
                                 <!-- Car Service mobile -->
-                                <button data-index="1" data-angle="15"
+                                <button data-index="1" data-angle="10"
                                     class="label sm:!hidden block absolute top-[-25%] left-[56%]  text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem] leading-snug">
                                     Car Service
                                     <span
@@ -989,7 +989,7 @@
                                 </button>
 
                                 <!-- Battery Service mobile -->
-                                <button data-index="3" data-angle="45"
+                                <button data-index="3" data-angle="35"
                                     class="label sm:!hidden block absolute top-[-5%] right-[-25%] text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem] leading-snug">
                                     Battery Service
                                     <span
@@ -1009,7 +1009,7 @@
                                 </button>
 
                                 <!-- Tyre Care mobile -->
-                                <button data-index="5" data-angle="65"
+                                <button data-index="5" data-angle="55"
                                     class="label sm:!hidden block absolute top-[23%] right-[-44%] -translate-y-1/2 text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem] leading-snug">
                                     Tyre Care
                                     <span
@@ -1028,7 +1028,7 @@
                                     </span>
                                 </button>
                                 <!-- AC Service mobile -->
-                                <button data-index="7" data-angle="85"
+                                <button data-index="7" data-angle="78"
                                     class="label sm:!hidden block absolute top-[37%] right-[-50%] text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem] leading-snug">
                                     AC Service
                                     <span
@@ -1038,7 +1038,7 @@
                                 </button>
 
                                 <!-- Headlight Polish mobile -->
-                                <button data-index="8" data-angle="105"
+                                <button data-index="8" data-angle="100"
                                     class="label sm:!hidden block absolute top-[56%] right-[-50%] text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem]  leading-snug">
                                     Headlight Polish
                                     <span
@@ -1050,7 +1050,7 @@
 
 
                                 <!-- Body Shop mobile -->
-                                <button data-index="9" data-angle="125"
+                                <button data-index="9" data-angle="120"
                                     class="label sm:!hidden block absolute top-[75%] right-[-44%] text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem]  leading-snug">
                                     Body Shop
                                     <span
@@ -1061,7 +1061,7 @@
 
 
                                 <!-- Engine Care mobile -->
-                                <button data-index="10" data-angle="140"
+                                <button data-index="10" data-angle="145"
                                     class="label sm:!hidden block absolute bottom-[-16%] right-[-25%] text-start font-semibold text-[#000000] transition-all duration-300 ease-in-out text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl w-[11rem]  leading-snug">
                                     Engine Care
                                     <span
@@ -1188,10 +1188,17 @@
 
             let currentActive = null;
 
+            // ✅ Arrow distance adjusted for mobile view
             function computeArrowDistance() {
                 const rect = container.getBoundingClientRect();
                 const radius = rect.width / 2;
-                return Math.round(radius * 0.96);
+
+                // 🔸 Push arrow slightly outward on mobile
+                if (window.innerWidth <= 640) {
+                    return Math.round(radius * 1); // small outward shift for mobile
+                } else {
+                    return Math.round(radius * 0.96); // normal for desktop
+                }
             }
 
             function moveArrow(angle) {
@@ -1249,6 +1256,7 @@
             }
         });
     </script>
+
 
 
 
