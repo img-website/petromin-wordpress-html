@@ -90,14 +90,16 @@
                                 class="flex items-center justify-start  origin-bottom z-20 bg-[#CB122D] px-4 shadow-[-6px_6px_0px_-1px_rgba(0,0,0,0.9)] w-56 h-16 transition transform -skew-x-12 duration-150 ease-in-out">
                                 <div class="swiper-prev cursor-pointer">
                                     <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fi_19024510.webp"
-                                            class="text-white size-8 rotate-180 skew-x-12 invert brightness-0">
+                                        <img fetchpriority="low" loading="lazy" src="img/left_chev.svg"
+                                            class="text-white size-8 skew-x-12 invert brightness-0" alt="left arrow"
+                                            title="left arrow">
                                     </span>
                                 </div>
                                 <div class="swiper-next cursor-pointer">
                                     <span>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fi_19024510.webp"
-                                            class="text-white size-8 skew-x-12 invert brightness-0 mb-[0.188] ml-3">
+                                        <img fetchpriority="low" loading="lazy" src="img/right_chev.svg"
+                                            class="text-white size-8 skew-x-12 invert brightness-0 mb-[0.188] ml-3"
+                                            alt="right arrow" title="right arrow">
                                     </span>
                                 </div>
                             </div>
@@ -118,14 +120,11 @@
 
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <?php $img = get_field('feature_slider_img'); ?>
-                                                <?php if ($img): ?>
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-42.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="Four Petromin Express stations launched in Chennai – OMR, Central, T. Nagar, and Whites Road"
                                                     title="Four Petromin Express stations launched in Chennai – OMR, Central, T. Nagar, and Whites Road">
-                                                <?php endif; ?>
+
                                                 <div
                                                     class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
                                                     Four Petromin Express stations launched in Chennai – OMR, Central,
@@ -148,8 +147,7 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-2.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="Petromin Express stations launched at Kattankulathur, Sholinganallur, and Tambaram"
                                                     title="Petromin Express stations launched at Kattankulathur, Sholinganallur, and Tambaram">
@@ -174,14 +172,13 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <?php $img = get_field('feature_slider_img'); ?>
-                                                <?php if ($img): ?>
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo esc_url($img['url']); ?>"
+
+
+                                                <img fetchpriority="low" loading="lazy" src="img/image-42.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="HP Petromin Express stations launched in Avadi, Kattupakkam, Kilpauk, and Pallikaranai"
                                                     title="HP Petromin Express stations launched in Avadi, Kattupakkam, Kilpauk, and Pallikaranai">
-                                                <?php endif; ?>
+
                                                 <div
                                                     class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
                                                     HP Petromin Express stations launched in Avadi, Kattupakkam,
@@ -202,14 +199,11 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <?php $img = get_field('feature_slider_img'); ?>
-                                                <?php if ($img): ?>
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-2.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="First HP Petromin Express station launched in Bangalore – Peenya"
                                                     title="First HP Petromin Express station launched in Bangalore – Peenya">
-                                                <?php endif; ?>
+
                                                 <div
                                                     class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
                                                     First HP Petromin Express station launched in Bangalore – Peenya
@@ -229,8 +223,7 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-42.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="Six HP Petromin Express stations launched across Bangalore"
                                                     title="Six HP Petromin Express stations launched across Bangalore">
@@ -253,14 +246,11 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <?php $img = get_field('feature_slider_img'); ?>
-                                                <?php if ($img): ?>
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-2.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="HP Petromin Express station launched in Madhavaram, Chennai"
                                                     title="HP Petromin Express station launched in Madhavaram, Chennai">
-                                                <?php endif; ?>
+
                                                 <div
                                                     class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
                                                     HP Petromin Express station launched in Madhavaram, Chennai
@@ -280,8 +270,7 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2.webp"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-42.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="HP Petromin Express station launched in Kasturba Road, Bangalore"
                                                     title="HP Petromin Express station launched in Kasturba Road, Bangalore">
@@ -305,15 +294,12 @@
                                         </div>
                                         <div class="flex flex-col items-start skew-x-[18deg] w-full">
                                             <div class="md:pl-14 pl-10 max-w-[90%]">
-                                                <?php $img = get_field('feature_slider_img'); ?>
-                                                <?php if ($img): ?>
-                                                <img loading="eager" fetchpriority="high" decoding="async"
-                                                    src="<?php echo esc_url($img['url']); ?>"
+                                                <img fetchpriority="low" loading="lazy" src="img/image-2.webp"
                                                     class="lg:h-44 w-auto h-32 object-contain object-center aspect-square"
                                                     alt="Two new Petromin Express stations launched in Kovur and Pallavaram
                                 Arabia" title="Two new Petromin Express stations launched in Kovur and Pallavaram
                                 Arabia">
-                                                <?php endif; ?>
+
                                                 <div
                                                     class="2xl:text-2xl xl:text-xl lg:text-xl text-base font-medium text-black  mx-auto ">
                                                     Two new Petromin Express stations launched in Kovur and Pallavaram
