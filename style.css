@@ -270,3 +270,9 @@ input.open::placeholder {
 ::-webkit-scrollbar-thumb:hover {
     background: #b93a40;
 }
+.number-outline {
+    color: transparent;
+    -webkit-text-stroke: 3px #ffdde2;
+    text-stroke: 3px #ffdde2;
+    filter: drop-shadow(0 0 0px #ffdde2);
+}

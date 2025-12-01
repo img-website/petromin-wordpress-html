@@ -20,51 +20,150 @@
 
     <section class="body_paint_sec md:pt-[4rem] pt-[3rem]  md:pb-[6.25rem] pb-[4rem]">
         <div class="view w-full relative">
-            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 items-center">
-                <div class="w-full relative flex flex-col gap-4">
-                    <div class="w-full flex flex-col gap-1 md:gap-1">
-                        <h1
-                            class="relative xl:text-[3.125rem] lg:-[3rem] md:text-[3rem] text-4xl lg:leading-[3.75rem] font-bold text-[#000000] ">
-                            Full-Body Car <span class="block"> Painting at <span
-                                    class="bg-gradient-to-l from-[#CB122D] to-[#650916] bg-clip-text text-transparent">
-                                    ₹14,999*</span></span>
-
-                        </h1>
-                        <div
-                            class="bg-gradient-to-l from-[#CB122D]  to-[#650916] w-[7.375rem] w-20 h-3 -skew-x-[22deg]">
-                        </div>
-                    </div>
-                    <p class="md:w-10/12 w-full md:text-lg text-base text-[#000000]  font-medium">Your car
-                        gets
-                        full-body
-                        painting with free wax polish,
-                        pick-up and drop, and a 1-year paint
-                        warranty.</p>
-                    <div class="flex w-full pt-3">
-                        <button
-                            class="px-5 flex space-x-3 items-center bg-[#FF8300] h-11 duartion-300 hover:bg-[#cb122d]">
-                            <span class="flex items-center gap-1 text-base font-semibold text-white">Add Offer
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 14 20"
-                                    fill="none">
-                                    <path
-                                        d="M13.5294 9.84344L6.92754 19.6791H0L2.20534 16.4006L6.60187 9.84344L2.20534 3.29018L0 0H6.92754L13.5294 9.84344Z"
-                                        fill="white" />
-                                </svg></span>
-
-                        </button>
+            <div class="w-full flex flex-col gap-1 md:gap-1 mb-8">
+                <h1
+                    class="relative xl:text-[3.125rem] lg:-[3rem] md:text-[3rem] text-4xl lg:leading-[3.75rem] font-bold text-[#000000] ">
+                    Offer Name
+                </h1>
+                <div class="bg-gradient-to-l from-[#CB122D]  to-[#650916] w-[7.375rem] w-20 h-3 -skew-x-[22deg]">
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 items-stretch">
+                <div class="w-full relative flex flex-col gap-y-8">
+                    <div class="size-full">
+                        <img fetchpriority="high" decoding="async" loading="eager" src="img/full_body_car_painting.webp"
+                            class="size-full object-cover aspect-square" alt="Full-Body Car Painting at ₹14,999*"
+                            title="Full-Body Car Painting at ₹14,999*">
                     </div>
                 </div>
-                <div class="relative">
-                    <img fetchpriority="high" decoding="async" loading="eager" src="img/full_body_car_painting.webp"
-                        class="size-full object-cover aspect-square" alt="Full-Body Car Painting at ₹14,999*"
-                        title="Full-Body Car Painting at ₹14,999*">
+                <div class="relative w-ful bg-[#FFFFFF] border border-[#E5E7EB] shadow-[0_4px_12px_0_#0000000F]">
+                    <div class="text-white  bg-gradient-to-l from-[#CB122D] to-[#650916] px-6 py-4 uppercase">
+                        <h2 class="text-white md:text-lg text-md font-semibold italic">Get this offer today</h2>
+                    </div>
+                    <div class="py-8 px-6">
+                        <form action="" class="flex flex-col gap-y-8">
+                            <div class="w-full relative">
+                                <label class="block mb-2 text-base font-medium">City</label>
+                                <div class="relative w-full">
+                                    <select class="bg-[#F8F8F8] text-base font-normal border border-[#E5E7EB] rounded h-[2.994rem] w-full
+                                        px-4 pr-10
+                                        text-[#99A1AF]
+                                        appearance-none
+                                        focus:outline-none focus:ring-0 focus:border-[#E5E7EB]">
+
+                                        <option value="" disabled selected class="text-[#99A1AF]">Select City</option>
+                                        <option value="1" class="text-black">Mumbai</option>
+                                        <option value="2" class="text-black">Delhi</option>
+                                        <option value="3" class="text-black">Jaipur</option>
+                                    </select>
+                                    <span class="absolute right-4 top-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                            fill="none">
+                                            <path d="M0.833008 0.833008L5.83101 5.83101L10.829 0.833008"
+                                                stroke="#99A1AF" stroke-width="1.666" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-full relative">
+                                <label class="block mb-2 text-base font-medium">Car Brand</label>
+                                <div class="relative w-full">
+                                    <select class="bg-[#F8F8F8] text-base font-normal border border-[#E5E7EB] rounded h-[2.994rem] w-full
+                                        px-4 pr-10
+                                        text-[#99A1AF]
+                                        appearance-none
+                                        focus:outline-none focus:ring-0 focus:border-[#E5E7EB]">
+
+                                        <option value="" disabled selected class="text-[#99A1AF]">Select Brand</option>
+                                        <option value="1" class="text-black">Mumbai</option>
+                                        <option value="2" class="text-black">Delhi</option>
+                                        <option value="3" class="text-black">Jaipur</option>
+                                    </select>
+                                    <span class="absolute right-4 top-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                            fill="none">
+                                            <path d="M0.833008 0.833008L5.83101 5.83101L10.829 0.833008"
+                                                stroke="#99A1AF" stroke-width="1.666" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-full relative">
+                                <label class="block mb-2 text-base font-medium">Car Model</label>
+                                <div class="relative w-full">
+                                    <select class="bg-[#F8F8F8] text-base font-normal border border-[#E5E7EB] rounded h-[2.994rem] w-full
+                                        px-4 pr-10
+                                        text-[#99A1AF]
+                                        appearance-none
+                                        focus:outline-none focus:ring-0 focus:border-[#E5E7EB]">
+
+                                        <option value="" disabled selected class="text-[#99A1AF]">Select Model</option>
+                                        <option value="1" class="text-black">Mumbai</option>
+                                        <option value="2" class="text-black">Delhi</option>
+                                        <option value="3" class="text-black">Jaipur</option>
+                                    </select>
+                                    <span class="absolute right-4 top-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                            fill="none">
+                                            <path d="M0.833008 0.833008L5.83101 5.83101L10.829 0.833008"
+                                                stroke="#99A1AF" stroke-width="1.666" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-full relative">
+                                <label class="block mb-2 text-base font-medium">Fuel Type</label>
+                                <div class="relative w-full">
+                                    <select class="bg-[#F8F8F8] text-base font-normal border border-[#E5E7EB] rounded h-[2.994rem] w-full
+                                        px-4 pr-10
+                                        text-[#99A1AF]
+                                        appearance-none
+                                        focus:outline-none focus:ring-0 focus:border-[#E5E7EB]">
+
+                                        <option value="" disabled selected class="text-[#99A1AF]">Select Fuel Type
+                                        </option>
+                                        <option value="1" class="text-black">Mumbai</option>
+                                        <option value="2" class="text-black">Delhi</option>
+                                        <option value="3" class="text-black">Jaipur</option>
+                                    </select>
+                                    <span class="absolute right-4 top-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
+                                            fill="none">
+                                            <path d="M0.833008 0.833008L5.83101 5.83101L10.829 0.833008"
+                                                stroke="#99A1AF" stroke-width="1.666" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-full relative">
+                                <div class="text-[#6A7282] text-base font-normal">
+                                    Starting from <span class="text-[#CB122D] text-lg font-semibold"> ₹1,399*</span>
+                                </div>
+                            </div>
+
+                            <button type="button"
+                                class="w-full bg-[#FF8300] font-bold text-base text-white h-11 flex justify-center items-center gap-3 hover:bg-[#CB122D] duration-300">
+                                Book Now
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 11 16"
+                                        fill="none">
+                                        <path
+                                            d="M11 8.00315L5.63239 16H0L1.79304 13.3344L5.36761 8.00315L1.79304 2.67506L0 0H5.63239L11 8.00315Z"
+                                            fill="white" />
+                                    </svg></span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="w-full relative bg-white  md:pb-[3.25rem] pb-[5rem]">
+    <section class="w-full relative bg-white  md:pb-[5.25rem] pb-[5rem]">
         <div class="view">
             <div class="w-full flex flex-col gap-1 md:gap-1">
                 <h2
@@ -75,81 +174,74 @@
                 </div>
             </div>
             <div class="w-full relative pt-12">
-                <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
-                    <div
-                        class="w-full relative overflow-hidden group duration-500 md:h-[26.063rem] h-full before:absolute before:inset-0 before:bg-[#0000004a] before:w-full before:size-full before:lg:opacity-0 before:duration-500 hover:lg:before:opacity-100 hover:lg:-translate-y-2">
-                        <img fetchpriority="low" loading="lazy" src="img/best_sutited.webp"
-                            alt="Owners with fading or dull paintwork" title="Owners with fading or dull paintwork"
-                            class="size-full object-cover aspect-[371/334]">
-                        <div class="absolute bottom-0 left-0 flex flex-col gap-y-3 duration-500 py-10 px-6">
+                <div class="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 gap-12">
+                    <div class="w-full relative group duration-500 h-full hover:lg:-translate-y-2">
+                        <div class="number-outline text-[6.25rem] -mb-[4rem]">
+                            01
+                        </div>
+                        <div class="flex flex-col gap-y-3 relative z-30">
                             <h3
-                                class="text-[#FFFFFF] xl:text-4xl lg:text-3xl md:text-3xl text-2xl font-semibold duration-300 group-hover:lg:text-[#CB122D]">
+                                class=" bg-gradient-to-l from-[#CB122D] to-[#650916] text-transparent bg-clip-text xl:text-2xl lg:text-2xl md:text-xl text-lg font-semibold duration-300">
                                 Owners with fading or dull paintwork
                             </h3>
-                            <p class="text-[#FFFFFF] md:text-lg text-base duration-500 
-          drop-shadow-[3px_3px_10px_rgba(0,0,0,0.9)]">
+                            <p class="text-[#14293C] text-sm font-normal duration-500 ">
                                 Ideal for cars showing oxidation, discolouration, or loss of gloss due to increased sun
                                 exposure or ageing paint.
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="w-full relative overflow-hidden group duration-500 md:h-[26.063rem] h-full before:absolute before:inset-0 before:bg-[#0000004a] before:w-full before:size-full before:lg:opacity-0 before:duration-500 hover:lg:before:opacity-100 hover:lg:-translate-y-2">
-                        <img fetchpriority="low" loading="lazy" src="img/best_sutited.webp"
-                            alt="Drivers seeking complete preventive care"
-                            title="Drivers seeking complete preventive care"
-                            class="size-full object-cover aspect-[371/334]">
-                        <div class="absolute bottom-0 left-0 flex flex-col gap-y-3 duration-500 py-10 px-6">
+                    <div class="w-full relative group duration-500 h-full hover:lg:-translate-y-2">
+                        <div class="number-outline text-[6.25rem] -mb-[4rem]">
+                            02
+                        </div>
+                        <div class="flex flex-col gap-y-3 relative z-30">
                             <h3
-                                class="text-[#FFFFFF] xl:text-4xl lg:text-3xl md:text-3xl text-2xl font-semibold duration-300 group-hover:lg:text-[#CB122D]">
+                                class=" bg-gradient-to-l from-[#CB122D] to-[#650916] text-transparent bg-clip-text xl:text-2xl lg:text-2xl md:text-xl text-lg font-semibold duration-300">
                                 Drivers seeking complete preventive care
                             </h3>
-                            <p class="text-[#FFFFFF] md:text-lg text-base duration-500 
-          drop-shadow-[3px_3px_10px_rgba(0,0,0,0.9)]">
-                                The PMS Service Offer @ ₹3,199* ensures reliable performance with oil and filter
-                                changes, fluid top-ups, and essential preventive checks.
+                            <p class="text-[#14293C] text-sm font-normal duration-500 ">
+                                Ideal for cars showing oxidation, discolouration, or loss of gloss due to increased sun
+                                exposure or ageing paint.
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="w-full relative overflow-hidden group duration-500 md:h-[26.063rem] h-full before:absolute before:inset-0 before:bg-[#0000004a] before:w-full before:size-full before:lg:opacity-0 before:duration-500 hover:lg:before:opacity-100 hover:lg:-translate-y-2">
-                        <img fetchpriority="low" loading="lazy" src="img/best_sutited.webp"
-                            alt="Time-conscious car owners" title="Time-conscious car owners"
-                            class="size-full object-cover aspect-[371/334]">
-                        <div class="absolute bottom-0 left-0 flex flex-col gap-y-3 duration-500 py-10 px-6">
+                    <div class="w-full relative group duration-500 h-full hover:lg:-translate-y-2">
+                        <div class="number-outline text-[6.25rem] -mb-[4rem]">
+                            03
+                        </div>
+                        <div class="flex flex-col gap-y-3 relative z-30">
                             <h3
-                                class="text-[#FFFFFF] xl:text-4xl lg:text-3xl md:text-3xl text-2xl font-semibold duration-300 group-hover:lg:text-[#CB122D]">
-                                Time-conscious car
-                                owners
+                                class=" bg-gradient-to-l from-[#CB122D] to-[#650916] text-transparent bg-clip-text xl:text-2xl lg:text-2xl md:text-xl text-lg font-semibold duration-300">
+                                Drivers seeking complete preventive care
                             </h3>
-                            <p class="text-[#FFFFFF] md:text-lg text-base duration-500 
-          drop-shadow-[3px_3px_10px_rgba(0,0,0,0.9)]">
-                                Perfect for those who value convenience with quick turnarounds, without compromising on
-                                thoroughness or quality.
-
+                            <p class="text-[#14293C] text-sm font-normal duration-500 ">
+                                Ideal for cars showing oxidation, discolouration, or loss of gloss due to increased sun
+                                exposure or ageing paint.
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="w-full relative overflow-hidden group duration-500 md:h-[26.063rem] h-full before:absolute before:inset-0 before:bg-[#0000004a] before:w-full before:size-full before:lg:opacity-0 before:duration-500 hover:lg:before:opacity-100 hover:lg:-translate-y-2">
-                        <img fetchpriority="low" loading="lazy" src="img/best_sutited.webp"
-                            alt="Owners with fading or dull paintwork" title="Owners with fading or dull paintwork"
-                            class="size-full object-cover aspect-[371/334]">
-                        <div class="absolute bottom-0 left-0 flex flex-col gap-y-3 duration-500 py-10 px-6">
+                    <div class="w-full relative group duration-500 h-full hover:lg:-translate-y-2">
+                        <div class="number-outline text-[6.25rem] -mb-[4rem]">
+                            04
+                        </div>
+                        <div class="flex flex-col gap-y-3 relative z-30">
                             <h3
-                                class="text-[#FFFFFF] xl:text-4xl lg:text-3xl md:text-3xl text-2xl font-semibold duration-300 group-hover:lg:text-[#CB122D]">
+                                class=" bg-gradient-to-l from-[#CB122D] to-[#650916] text-transparent bg-clip-text xl:text-2xl lg:text-2xl md:text-xl text-lg font-semibold duration-300">
                                 Owners with fading or dull paintwork
                             </h3>
-                            <p class="text-[#FFFFFF] md:text-lg text-base duration-500 
-          drop-shadow-[3px_3px_10px_rgba(0,0,0,0.9)]">
-                                Regular PMS improves fuel efficiency, extends component life, and maintains resale
-                                value, making it a smart investment in car reliability.
+                            <p class="text-[#14293C] text-sm font-normal duration-500 ">
+                                Ideal for cars showing oxidation, discolouration, or loss of gloss due to increased sun
+                                exposure or ageing paint.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pt-10 md:flex hidden w-full flex-col gap-4">
+        </div>
+    </section>
+    <section class="w-full relative bg-white  md:pb-[5.25rem] pb-[5rem]">
+        <div class="view">
+            <div class="md:flex hidden w-full flex-col gap-4">
                 <div class="font-bold text-[#000000] md:text-xl text-lg">*Terms & Conditions</div>
                 <div class="w-full relative flex flex-col gap-y-1">
                     <div class="text-[#000000A3] md:text-lg text-base">Additional parts or fluids, if required, will be
@@ -166,7 +258,7 @@
         </div>
     </section>
 
-    <section class="commonly bg-white relative w-full  pb-20">
+    <section class="commonly bg-white relative w-full  pb-20 ">
         <div class="view flex flex-col md:gap-y-12 gap-y-8" id="commonlyAccordion">
             <div class="w-full relative ">
                 <div class="w-full flex flex-col gap-y-3">
